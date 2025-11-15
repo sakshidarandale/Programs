@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Demo
+{
+    int i;
+    float f;
+    int j;
+};
+int main()
+{
+    struct Demo obj;
+
+    struct Demo *p=&obj;
+
+    p->i=11; // arrow used when u have a pointer 
+    p->f=90.04;
+    p->j=21;
+
+    printf("%d\n",p->i);
+    printf("%f\n",p->f);
+    printf("%d\n",p->j);
+    
+
+
+    return 0;
+
+}
